@@ -1,0 +1,382 @@
+/* GENERAL CSS */
+html,body
+{
+    
+    overflow-x: hidden; 
+}
+
+* {
+        font-family: "Helvetica Neue LT Pro";
+		margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+}
+img {
+padding: 1px;
+border: 2px solid #000000;
+}
+/* background stuff */
+
+
+.b1{	
+	/*background-size: 100%;	*/
+	height: 770px;
+	max-width: 100%;
+	background-image: url(background3.jpg);
+	border-collapse: collapse;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: #999;
+	/*
+	image centering code from https://codepen.io/theiwaz/pen/vybjc
+	*/
+}
+
+.b3{
+	height: 770px;
+	max-width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(67, 111, 122, 1));
+	/*
+	background-image: url(https://i.imgur.com/S7vIwoP.jpg);
+	background-position: 0% 60%;
+	*/
+}
+
+/* body font  */
+
+
+#t1{
+	color: #FFEEEE;
+	font-size:30px;
+}
+#t2{
+	color: #FFEEEE;
+	font-size:50px;
+}
+#t3{
+	color: #222222;
+	font-size:50px;
+}
+
+/* menu stuff */
+
+.menu{
+width: 30%;
+margin-left: 34%;
+}
+.menu > a{
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all .2s ease-in; 
+	padding-right: 10px; 
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #FFEEEE;
+		
+}
+a.m1{
+	flex: 1;
+	order: 1;
+	border-top-color:#4285F4;
+}
+a.m1:hover{
+	color: #000000;
+	background-color: #CFC4DB;
+	border-top-color:#4285F4;
+	
+}
+a.m2{
+	flex: 1;
+	order: 2;
+	border-top:solid 5px;
+	border-top-color:#87DAFC;
+	
+}
+a.m2:hover{
+	color: #000000;
+	background-color: #87DAFC;
+	border-top-color:#87DAFC;
+}
+
+a.m3{
+	flex: 1;
+	order: 3;
+	border-top-color:#FBBC05;
+}
+a.m3:hover{
+	color: #000000;
+	background-color: #FBFF8B;
+	border-top-color:#FBBC05;
+}
+
+a.m4{
+	flex: 1;
+	order: 4;
+	border-top-color:#34A853;
+}
+a.m4:hover{
+	color: #000000;
+	background-color: #7BFF97;
+	border-top-color:#34A853;
+}
+
+
+
+a.m5{
+	flex: 1;
+	order: 5;
+	
+	border-top-color:#EA4335;
+	
+	
+}
+a.m5:hover{
+	color: #000000;
+	background-color: #FF7B7B;
+	border-top-color:#FF7B7B;
+}
+
+/* menu code from codepens: https://codepen.io/iPawan/pen/vxqemK */
+
+
+/*---------------------------------------------------------------------------------------CSS FOR DESKTOP----------------------------------------------------------------------------*/
+
+
+
+@media(min-width: 768px){
+.menu {
+	position: relative;
+	
+	right: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/* menu code from codepens: https://codepen.io/iPawan/pen/vxqemK */
+}
+
+.b1  > h1{
+color: #FFEEEE;
+font-size: 70px;
+position: relative;
+top: 280px;
+text-align: center;
+}
+
+.b1  > p{
+color: #C7D5FF;
+font-size: 20px;
+position: relative;
+top: 280px;
+text-align: center;
+}
+
+
+#t5{
+	color: #FFEEEE;
+	font-size:40px;
+	text-align: center;
+}
+
+#overview {
+width: 73%;
+margin-left: 20%;
+
+}
+
+#overview h3{
+text-align: center;
+
+}
+#unwrapped {
+height: 250px;
+}
+#wrapped{
+width: 100%;
+
+}
+#wrapped p {
+font-size: 18px;
+}
+#wrapped pre{
+color: #FFEEEE;
+}
+#rightside {
+width: 60%;
+float: right;
+
+}
+
+#leftside{
+width: 40%;
+float: left;
+}
+
+#leftside h4{
+font-size: 20px;
+}
+
+#leftside ul{
+font-size: 15px;
+}
+
+#rightside img{
+width: 60%;
+height: auto;
+float: left;
+}
+
+/*
+#design h4{
+font-size: 25px;
+}
+#design img{
+position: absolute;
+left: 50%;
+top: 110%;
+
+width: 40%;
+height: auto;
+}
+*/
+#text{
+display: block;
+font-size: 16px;
+width: 90%;
+
+}
+}
+/*----------------------------------------------------------------------------------------CSS FOR MOBILE----------------------------------------------------------------------- */
+@media(max-width: 768px){
+a.m2{
+	color: #000000;
+	background-color: #87DAFC;
+	border-top-color:#87DAFC;
+	
+}
+.b3{
+	height: 1000px;
+	max-width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(135, 218, 252, 1));
+	/*
+	background-image: url(https://i.imgur.com/S7vIwoP.jpg);
+	background-position: 0% 60%;
+	*/
+}
+
+.b1  > h1{
+color: #FFEEEE;
+font-size: 70px;
+position: relative;
+top: 130px;
+text-align: center;
+}
+.b1  > p{
+color: #C7D5FF;
+font-size: 20px;
+position: relative;
+top: 160px;
+text-align: center;
+width: 100%;
+}
+.menu {
+    display:flex;
+    flex-direction: column;
+   
+	justify-content: center;
+	/* menu code from codepens: https://codepen.io/iPawan/pen/vxqemK */
+} 
+.menu > a{
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all .2s ease-in; 
+	padding-right: 10px; 
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+		
+}
+
+
+
+#overview {
+width: 73%;
+margin-left: 20%;
+
+}
+#unwrapped {
+height: 420px;
+}
+#wrapped{
+width: 100%;
+
+}
+#wrapped p {
+font-size: 18px;
+}
+#wrapped pre{
+color: #FFEEEE;
+}
+#rightside {
+width: 50%;
+float: right;
+
+}
+
+#leftside{
+width: 40%;
+float: left;
+}
+#leftside h3{
+font-size: 40px;
+}
+#leftside h4{
+font-size: 20px;
+}
+
+#leftside ul{
+font-size: 15px;
+}
+
+#rightside img{
+width: 100%;
+height: auto;
+float: left;
+}
+
+/*
+#design h4{
+font-size: 25px;
+}
+#design img{
+position: absolute;
+left: 50%;
+top: 110%;
+
+width: 40%;
+height: auto;
+}
+*/
+#text{
+display: block;
+font-size: 15px;
+width: 90%;
+
+}
+}
+/* 
+    Created on : Jun 26, 2018, 4:05:07 PM
+    Author     : Patrick
+*/
+
