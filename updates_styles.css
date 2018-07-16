@@ -17,7 +17,7 @@ html,body
 }
 img {
 padding: 1px;
-border: 2px solid #000000;
+border: 2px solid #ffffff;
 }
 /* background stuff */
 
@@ -48,7 +48,7 @@ border: 2px solid #000000;
 	max-width: 100%
 }
 
-
+/* rgba(102, 125, 104, 1) old color */ 
 /* body font  */
 
 
@@ -86,59 +86,65 @@ margin-left: 34%;
 a.m1{
 	flex: 1;
 	order: 1;
-	border-top-color:#4285F4;
+	border-top-color:#87DAFC4;
 }
 a.m1:hover{
 	color: #000000;
-	background-color: #CFC4DB;
-	border-top-color:#4285F4;
+	background-color: #87DAFC;
+	border-top-color:#87DAFC;
 	
 }
 a.m2{
 	flex: 1;
 	order: 2;
-	border-top-color:#EA4335;
+	
+	border-top-color:#87DAFC;
+	
 }
 a.m2:hover{
 	color: #000000;
 	background-color: #87DAFC;
-	border-top-color:#EA4335;
+	border-top-color:#87DAFC;
 }
 
 a.m3{
 	flex: 1;
 	order: 3;
 	border-top:solid 5px;
-	border-top-color:#FBFF8B;
+	border-top-color:#87DAFC;
 }
 a.m3:hover{
 	color: #000000;
-	background-color: #FBFF8B;
-	border-top-color:#FBFF8B;
+	background-color: #87DAFC;
+	border-top-color:#87DAFC;
 }
 
 a.m4{
 	flex: 1;
 	order: 4;
 	
-	border-top-color:#7BFF97;
-	
+	border-top-color:#87DAFC;
 }
 a.m4:hover{
 	color: #000000;
-	background-color: #7BFF97;
-	border-top-color:#7BFF97;
+	background-color: #87DAFC;
+	border-top-color:#87DAFC;
 }
+
+
 
 a.m5{
 	flex: 1;
 	order: 5;
-	border-top-color:#EA4335;
+	
+	border-top-color:#87DAFC;
+	
+	
 }
 a.m5:hover{
 	color: #000000;
-	background-color: #FF7B7B;
-	border-top-color:#EA4335;
+	background-color: #87DAFC;
+	border-top-color:#87DAFC;
 }
 /* menu code from codepens: https://codepen.io/iPawan/pen/vxqemK */
 
