@@ -16,63 +16,73 @@ html,body
         background: transparent;
 }
 img {
-padding: 1px;
-border: 2px solid #ffffff;
+
 }
 /* background stuff */
 
+body {
+	 
+	background-color: #999;
 
-.b1{	
-	/*background-size: 100%;	*/
-	height: 770px;
-	max-width: 100%;
-	background-image: url(background3.jpg);
-	border-collapse: collapse;
-	background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-color: #999;
-	/*
-	image centering code from https://codepen.io/theiwaz/pen/vybjc
-	*/
 }
 
-.b4{ 
-	/*
-	background-image: url(https://i.imgur.com/56Bea7V.jpg);
-	background-position: 0% 50%; 
-	*/
-	background: linear-gradient(rgba(0, 0, 0, 1), rgba(102, 125, 104, 1));
-	height: 1400px;
-	max-width: 100%;
+
+
+/* body font -------------------------------------------------------------- -------------------------------------------------------------- -------------------------------------------------------------- --------------------------------------------------------------  */
+
+#title{
+text-align: center;
+color: #FFFFFF;
+font-size:30px;
 }
-/*
-rgba(123, 127, 97, 1) old color
-*/
-/* body font  */
 
-
-#t1{
+#main-text{
 	color: #FFEEEE;
-	font-size:30px;
+	font-size:15px;
 }
-#t2{
+
+#heading{
 	color: #FFEEEE;
-	font-size:50px;
-}
-#t3{
-	color: #222222;
-	font-size:50px;
+	font-size:25px;
+	text-align: center;
 }
 
+#name{
+	color: #FFEEEE;
+	font-size: 17px;
+	padding-bottom: 10px;
+}
+
+#name-title{
+	color: #FFEEEE;
+	font-size: 14px;
+padding-bottom: 10px;
+}
+
+#description{
+	color: #FFEEEE;
+	font-size: 12px;
+}
 
 
-/* menu stuff */
+
+
+/* menu stuff   -------------------------------------------------------------- -------------------------------------------------------------- -------------------------------------------------------------- --------------------------------------------------------------*/
+
 .menu{
-width: 30%;
-margin-left: 34%;
+position: relative;
+width: 40%;
+text-align: center;
+margin: auto;
+padding-bottom: 50px;
+right: 0px;
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
+
+	/* menu code from codepens: https://codepen.io/iPawan/pen/vxqemK */
+
 .menu > a{
 	font-size: 15px;
 	text-align: center;
@@ -100,8 +110,7 @@ a.m1:hover{
 a.m2{
 	flex: 1;
 	order: 2;
-
-	border-top-color:#87DAFC;
+	
 	
 }
 a.m2:hover{
@@ -113,7 +122,6 @@ a.m2:hover{
 a.m3{
 	flex: 1;
 	order: 3;
-		
 	border-top-color:#87DAFC;
 }
 a.m3:hover{
@@ -125,8 +133,8 @@ a.m3:hover{
 a.m4{
 	flex: 1;
 	order: 4;
-	border-top:solid 5px;
-	border-top-color:#87DAFC;
+	background-color: #87DAFC;
+	color: #000000;
 }
 a.m4:hover{
 	color: #000000;
@@ -134,202 +142,141 @@ a.m4:hover{
 	border-top-color:#87DAFC;
 }
 
-
-
 a.m5{
 	flex: 1;
-	order: 5;
-	
+	order: 5;	
 	border-top-color:#87DAFC;
-	
-	
 }
 a.m5:hover{
 	color: #000000;
 	background-color: #87DAFC;
 	border-top-color:#87DAFC;
 }
-
-
 /* menu code from codepens: https://codepen.io/iPawan/pen/vxqemK */
 
 
-/*---------------------------------------------------------------------------------------CSS FOR DESKTOP----------------------------------------------------------------------------*/
-
-
-
-@media(min-width: 768px){
-.menu {
-	position: relative;
-	
-	right: 0px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	/* menu code from codepens: https://codepen.io/iPawan/pen/vxqemK */
+/* body organization -------------------------------------------------------------- -------------------------------------------------------------- -------------------------------------------------------------- -------------------------------------------------------------- */
+  .container{
+	margin-left: auto;
+	margin-right: auto;
+    display: table;
+    height: 770px;
+    position: relative;
+    overflow: hidden;
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(102, 125, 104, 1));
+	width: 100%;
 }
 
-
-.b1  > h1{
-color: #FFEEEE;
-font-size: 70px;
-position: relative;
-top: 280px;
-text-align: center;
+.wrapper{
+	margin-left: auto;
+	margin-right: auto;
+    display: table;
+	height: 100%;
+    position: relative;
+    overflow: hidden;
+	width: 1200px;
 }
 
-
-.b1  > p{
-color: #C7D5FF;
-font-size: 20px;
-position: relative;
-top: 280px;
-text-align: center;
-}
-
-
-#team {
-width: 80%;
-margin:auto;
-}
-
-
-#team h3{
-text-align: center;
-font-size: 40px;
-}
-
-#t3{
-	color: #FFEEEE;
-	font-size: 25px;
-	text-align: center;
-}
-
-#team p{
-font-size: 18px;
-}
-
-
-#faculty{
-width: 100%;
-}
-#other{
-width: 80%;
+#content {
+width: 73%;
 margin: auto;
 }
 
-.column1 {
-    float: left;
-    width: 30%;
-}
+/* page specific content-------------------------------------------------------------- -------------------------------------------------------------- -------------------------------------------------------------- -------------------------------------------------------------- */
 
-
-
-.column3 {
-    float: right;
-    width: 30%;   
-}
-
-
-.column2 {
-    display: inline-block;
-    width: 30%;
-	position: relative;
-	left: 5%;
-}
-
-
-
-#leftside{
-width: 40%;
-float: left;
-}
-
-
-#rightside{
-width: 40%;
-float: right;
-}
-
-#row1{
+#faculty{
 width: 100%;
-
+height: 100%;
 }
-#row2{
+
+#other{
 width: 100%;
+height: 100%;
 }
-#row3{
+
+#row{
+height: auto;
 width: 100%;
+padding-top: 20px;
+padding-bottom: 200px;
 }
 
-
-
-#names {
+#pictures {
 width: 50%;
 float: left;
 }
 
-
-#pictures {
-width: 100%;
-margin: auto;
+#desc {
+width: 50%;
+float:right;
+padding-top: 5px;
 }
 
+#desc-text{
+float: left;
+width: 80%;
+padding-left: 15px;
+}
+
+#leftside{
+width: 40%;
+position: relative;
+float: left;
+left: 5%;
+}
+
+#rightside{
+width: 40%;
+float: right;
+position: relative;
+right: 5%;
+}
+
+#pictures-other {
+width: 50%;
+float: left;
+}
+
+#desc-other {
+width: 50%;
+float:right;
+padding-top: 5px;
+}
+
+#desc-text-other{
+float: left;
+width: 80%;
+padding-left: 15px;
+}
 
 #pictures img{
-width: 30%;
+width: 35%;
 display: block;
 margin: auto;
-
-}
-#pictures p{
-
-text-align: center;
-font-size: 15px;
-
+position: relative;
+left: 20%;
+height: 100%;
+border-radius: 50%
 }
 
-
-
-
-
-
-#text{
-
+#pictures-other img{
+width: 70%;
 display: block;
-font-size: 16px;
-width: 100%;
 margin: auto;
-
-
-
+border-radius: 50%;
+height: auto;
 }
 
-
+#column{
+position: relative;
+left: 25px;
 }
+
 /*----------------------------------------------------------------------------------------CSS FOR MOBILE----------------------------------------------------------------------- */
 @media(max-width: 768px){
-a.m4{
-	color: #000000;
-	background-color: #7BFF97;
-	border-top-color:#7BFF97;
-}
 
-.b1  > h1{
-color: #FFEEEE;
-font-size: 70px;
-position: relative;
-top: 130px;
-text-align: center;
-}
-.b1  > p{
-color: #C7D5FF;
-font-size: 20px;
-position: relative;
-top: 160px;
-text-align: center;
-width: 100%;
-}
+
+
 .menu {
     display:flex;
     flex-direction: column;
@@ -347,76 +294,81 @@ width: 100%;
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	
-		
 }
 
-#team {
-width: 50%;
-margin:auto;
+ .container{
+	margin-left: auto;
+	margin-right: auto;
+    display: table;
+    height: 770px;
+    position: relative;
+    overflow: hidden;
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(102, 125, 104, 1));
+	width: 100%;
+}
+
+.wrapper{
+	margin-left: auto;
+	margin-right: auto;
+    display: table;
+	height: 100%;
+    position: relative;
+    overflow: hidden;
+	width: 500px;
+}
+
+#content {
+width: 73%;
+margin: auto;
 }
 
 
-#team h3{
-text-align: center;
-font-size: 40px;
+#row{
+height: auto;
+width: 100%;
+padding-top: 20px;
+padding-bottom: 200px;
 }
 
-#team p{
-font-size: 17px;
+#mobile-row{
+height: auto;
+width: 100%;
+padding-top: 200px;
+padding-bottom: 200px;
 }
+
 
 #leftside{
 width: 40%;
+position: relative;
 float: left;
+left:-25px;
 }
-
 
 #rightside{
 width: 40%;
 float: right;
+position: relative;
+right: 20px;
 }
-
-#row1{
-width: 100%;
-}
-#row2{
-width: 100%;
-}
-
-#names {
-width: 50%;
-float: left;
-}
-
-
-#pictures {
-width: 50%;
-float: right;
-}
-
 
 #pictures img{
-width: 160%;
+width: 60%;
 }
 
-
-
-
-
-
-
-#text{
-
-display: block;
-font-size: 17px;
+#pictures-other img{
 width: 100%;
-margin: auto;
-
-
-
 }
+
+#other h6{
+font-size: 15px;
 }
+
+#other p{
+font-size: 12px;
+}
+
+
 
 
 /* 

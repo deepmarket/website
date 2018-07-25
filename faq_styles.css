@@ -20,58 +20,56 @@ padding: 1px;
 border: 2px solid #ffffff;
 }
 
-a/* background stuff */
+body {
+	 
+	background-color: #999;
 
-.b1{	
-	/*background-size: 100%;	*/
-	height: 770px;
-	max-width: 100%;
-	background-image: url(background3.jpg);
-	border-collapse: collapse;
-	background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-color: #999;
-	/*
-	image centering code from https://codepen.io/theiwaz/pen/vybjc
-	*/
 }
 
-.b6{
-	/*
-	background-image: url(https://i.imgur.com/F8M5DKS.jpg);
-	background-position: 90% 99%;
-	*/
-	background: linear-gradient(rgba(0, 0, 0, 1),  rgba(102, 125, 104, 1));
-	height:770px;
-	max-width: 100%
+
+
+/* body font -------------------------------------------------------------- -------------------------------------------------------------- -------------------------------------------------------------- --------------------------------------------------------------  */
+
+#title{
+text-align: center;
+color: #FFFFFF;
+font-size:30px;
 }
-
-/* rgba(110, 65, 65, 1) old color */ 
-
-/* body font  */
-
-
-#t1{
+#main-text{
 	color: #FFEEEE;
-	font-size:30px;
+	font-size:15px;
 }
-#t2{
+#heading{
 	color: #FFEEEE;
-	font-size:50px;
+	font-size:20px;
 }
-#t3{
-	color: #222222;
-	font-size:50px;
+#link{
+color: #FFEEEE;
+
+}
+#link:hover{
+color: #C7D5FF;
+text-decoration: none;
+
+
 }
 
-/* menu stuff */
+/* menu stuff   -------------------------------------------------------------- -------------------------------------------------------------- -------------------------------------------------------------- --------------------------------------------------------------*/
 
 .menu{
-width: 30%;
-margin-left: 34%;
+position: relative;
+width: 40%;
+text-align: center;
+margin: auto;
+padding-bottom: 50px;
+right: 0px;
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
+
+	/* menu code from codepens: https://codepen.io/iPawan/pen/vxqemK */
+
 .menu > a{
 	font-size: 15px;
 	text-align: center;
@@ -100,7 +98,6 @@ a.m2{
 	flex: 1;
 	order: 2;
 	
-	border-top-color:#87DAFC;
 	
 }
 a.m2:hover{
@@ -131,15 +128,11 @@ a.m4:hover{
 	border-top-color:#87DAFC;
 }
 
-
-
 a.m5{
 	flex: 1;
-	order: 5;
-	border-top:solid 5px;
-	border-top-color:#87DAFC;
-	
-	
+	order: 5;	
+	background-color: #87DAFC;
+	color: #000000;
 }
 a.m5:hover{
 	color: #000000;
@@ -149,115 +142,36 @@ a.m5:hover{
 /* menu code from codepens: https://codepen.io/iPawan/pen/vxqemK */
 
 
-/*---------------------------------------------------------------------------------------CSS FOR DESKTOP----------------------------------------------------------------------------*/
-
-
-
-@media(min-width: 768px){
-.menu {
-	position: relative;
-	
-	right: 0px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	/* menu code from codepens: https://codepen.io/iPawan/pen/vxqemK */
+/* body organization -------------------------------------------------------------- -------------------------------------------------------------- -------------------------------------------------------------- -------------------------------------------------------------- */
+  .container{
+	margin-left: auto;
+	margin-right: auto;
+    display: table;
+    height: 770px;
+    position: relative;
+    overflow: hidden;
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(102, 125, 104, 1));
+	width: 100%;
 }
 
-.b1  > h1{
-color: #FFEEEE;
-font-size: 70px;
-position: relative;
-top: 280px;
-text-align: center;
-}
-.b1  > p{
-color: #C7D5FF;
-font-size: 20px;
-position: relative;
-top: 280px;
-text-align: center;
-width: 100%;
+.wrapper{
+	margin-left: auto;
+	margin-right: auto;
+    display: table;
+	height: 100%;
+    position: relative;
+    overflow: hidden;
+	width: 1200px;
 }
 
-
-#bottom{
+#content {
 width: 73%;
-margin:auto;
-}
-#bottom h1{
-text-align: center;
-font-size: 35px;
-}
-#bottom h3{
-font-size: 20px;
-color: #FFEEEE;
-}
-#bottom p{
-font-size: 15px;
-color: #FFEEEE;
-}
-#bottom > a{
-color: #FFEEEE;
-color: #FFEEEE;
-
-}
-#t4{
-color: #FFEEEE;
-
-}
-#t4:hover{
-color: #C7D5FF;
-text-decoration: none;
-
-
+margin: auto;
 }
 
-#text{
-display: block;
-font-size: 15px; 
-width: 100%; 
-
-}
-
-
-}
 
 /*----------------------------------------------------------------------------------------CSS FOR MOBILE----------------------------------------------------------------------- */
 @media(max-width: 768px){
-.b5{
-	/*
-	background-image: url(https://i.imgur.com/F8M5DKS.jpg);
-	background-position: 90% 99%;
-	*/
-	background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 123, 123, 1));
-	height:700px;
-	max-width: 100%
-}
-
-a.m5{
-	color: #000000;
-	background-color: #FF7B7B;
-	border-top-color:#FF7B7B;
-}
-
-
-
-.b1  > h1{
-color: #FFEEEE;
-font-size: 70px;
-position: relative;
-top: 130px;
-text-align: center;
-}
-.b1  > p{
-color: #C7D5FF;
-font-size: 20px;
-position: relative;
-top: 160px;
-text-align: center;
-width: 100%;
-}
 .menu {
     display:flex;
     flex-direction: column;
@@ -275,47 +189,27 @@ width: 100%;
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-
-		
 }
 
-#bottom{
-width: 73%;
-margin:auto;
-}
-#bottom h1{
-text-align: center;
-font-size: 35px;
-}
-#bottom h3{
-font-size: 20px;
-color: #FFEEEE;
-}
-#bottom p{
-font-size: 15px;
-color: #FFEEEE;
-}
-#bottom > a{
-color: #FFEEEE;
-color: #FFEEEE;
-
-}
-#t4{
-color: #FFEEEE;
-
-}
-#t4:hover{
-color: #C7D5FF;
-text-decoration: none;
-
-
+ .container{
+	margin-left: auto;
+	margin-right: auto;
+    display: table;
+    height: 770px;
+    position: relative;
+    overflow: hidden;
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(102, 125, 104, 1));
+	width: 100%;
 }
 
-#text{
-display: block;
-font-size: 15px;
-width: 100%;
-
+.wrapper{
+	margin-left: auto;
+	margin-right: auto;
+    display: table;
+	height: 100%;
+    position: relative;
+    overflow: hidden;
+	width: 500px;
 }
 }
   
