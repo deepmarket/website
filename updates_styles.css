@@ -51,7 +51,7 @@ font-size:30px;
 
 .menu{
 position: relative;
-width: 40%;
+width: 60%;
 text-align: center;
 margin: auto;
 padding-bottom: 50px;
@@ -154,7 +154,7 @@ a.m5:hover{
 	height: 100%;
     position: relative;
     overflow: hidden;
-	width: 1200px;
+	width: 850px;
 }
 
 #content {
@@ -167,13 +167,13 @@ margin: auto;
 
 
 #leftside{
-width: 40%;
+width: 45%;
 float: left;
 }
 
 
 #rightside{
-width: 40%;
+width: 45%;
 float: right;
 }
 

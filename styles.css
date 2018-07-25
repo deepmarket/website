@@ -55,7 +55,7 @@ font-size:50px;
 /* menu stuff   -------------------------------------------------------------- -------------------------------------------------------------- -------------------------------------------------------------- --------------------------------------------------------------*/
 .menu{
 position: relative;
-width: 30%;
+width: 32%;
 text-align: center;
 margin: auto;
 padding-bottom: 50px;
@@ -238,50 +238,6 @@ padding-top: 220px;
   
   
 
-
-
-
-
-/*
-#m1{
-font-size: 30px; 
-position: absolute;
-top: 5%;
-left: 17%;
-}
-#m2{
-font-size: 30px; 
-position: absolute;
-top: 5%;
-left: 33%;
-}
-#m3{
-font-size: 30px; 
-position: absolute;
-top: 5%;
-left: 47%;
-}
-#m4{
-font-size: 30px; 
-position: absolute;
-top: 5%;
-left: 59%;
-}
-#m5{
-font-size: 30px; 
-position: absolute;
-top: 5%;
-left: 76%;
-}
-*/
-/*
-#menubutton{
-position: fixed;
-left: 32px;
-top: 31px;
-
-}
-*/
 
 /*
 To change this license header, choose License Headers in Project Properties.
